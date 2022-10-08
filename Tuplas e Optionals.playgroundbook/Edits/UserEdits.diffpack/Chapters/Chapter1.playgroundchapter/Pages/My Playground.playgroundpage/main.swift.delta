@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// Tuplas
+let http404Error = (404, "Not Found")
+// http404Error é do tipo (Int, String) e é igual (404, "Not Found")
+let (statusCode, statusMessage) = http404Error
+print("O statusCode é \(statusCode)")
+print("O statusMessage é \(statusMessage)")
+let (justTheStatusCode, _) = http404Error
+print("O statusCode é \(statusCode)")
+print("O statusCode é \(http404Error.0)")
+print("O statusMessage é \(http404Error.1)")
+let http200Status = (statusCode: 200, description: "OK")
+print("O statusCode é \(http200Status.statusCode)")
+print("O statusMessage é \(http200Status.description)")
+
+// Optionals
+let possibleNumber = "123"
+let convertedNumber = Int(possibleNumber)
+print(convertedNumber)
+// convertedNumber é inferido como sendo do tipo "Int?", ou "Int opcional"
+
+// Optionals - nil
+var serverResponseCode: Int? = 404
+// serverResponseCode contém um valor Int real de 404
+serverResponseCode = nil
+// serverResponseCode é automaticamente defido como nil
+
+// Optinals - Forced Unwrapping
+if convertedNumber != nil {
+    print("convertedNumber contém algum valor inteiro")
+}
+if convertedNumber != nil {
+    print ("convertedNumber tem um valor inteiro de \(convertedNumber!).")
+}
+
+// Optinals - Optional Binding
+if let actualNumber = Int(possibleNumber) {
+    print("A string \(possibleNumber) tem um valor inteiro de \(actualNumber)")
+} else {
+    print("A string \(possibleNumber) não pode ser convertido em um número inteiro")
+}
+let myNumber = Int(possibleNumber)
+// Aqui, myNumber é um inteiro opcional
+if let myNumber = myNumber {
+    // Aqui, myNumber é um inteiro não opcional
+    print("Meu número é \(myNumber)")
+}
+/*
+ A partir do 5.7 pode usar a ortografia mais curta
+ if let myNumber {
+ print("Meu número é \(myNumber)")
+ }
+ */
+if let firstNumber = Int("4"), let secondNumber = Int("42"), firstNumber &lt; secondNumber &amp;&amp; secondNumber &lt; 100 {
+    print("\(firstNumber) &lt; \(secondNumber) &lt; 100")
+}
+if let firstNumber = Int("4") {
+    if let secondNumber = Int("42") {
+        if firstNumber &lt; secondNumber &amp;&amp; secondNumber &lt; 100 {
+            print("\(firstNumber) &lt; \(secondNumber) &lt; 100")
+        }
+    }
+}
+
+// Optinals - Unwrapped Optional Implicitamente
+let possibleString: String? = "Uma string opcional"
+let forcedString: String = possibleString! // requer um ponto de exclamação
+let assumedString: String! = "Uma string opcional desempacotada implicitamente"
+let implicit: String = assumedString // não precisa de ponto de exclamação
+let optionalString = assumedString
+// O tipo de optionalString é "String?" e assumedString não é desempacotada à força
+if assumedString != nil {
+    print(assumedString!)
+}
+if let definiteString = assumedString {
+    print(definiteString)
+}
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 2681}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

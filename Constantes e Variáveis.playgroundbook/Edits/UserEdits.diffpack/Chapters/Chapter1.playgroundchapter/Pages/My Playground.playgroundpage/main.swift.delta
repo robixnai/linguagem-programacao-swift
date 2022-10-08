@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// Declarações de Constantes e Variáveis
+let maximumNumberOfLoginAttempts = 10
+var currentLoginAttempts = 0
+
+// Anotações de tipo
+var welcomeMessage: String
+welcomeMessage = "Hello"
+var red, green, blue: Double
+var welcomeNewMessage = "Hello"
+
+// Nomenclatura
+let `public` = "Geral"
+let π = 3.14159
+let 你好 = "你好世界"
+let 🐶🐮 = "dogcow"
+var frendlyWelcome = "Hello!"
+frendlyWelcome = "Bonjour!"
+let languageName = "Swift"
+//languageName = "Swift++"" // Não permitido
+
+// Imprimindo Valores
+print(frendlyWelcome, terminator: "")
+print(frendlyWelcome)
+print("O valor atual de frendlyWelcome é \(frendlyWelcome)")
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 609}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

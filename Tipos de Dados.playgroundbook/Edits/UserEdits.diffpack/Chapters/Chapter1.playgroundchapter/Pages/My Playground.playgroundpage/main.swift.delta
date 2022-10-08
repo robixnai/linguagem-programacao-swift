@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// Inteiros
+let minValue = UInt.min // minValue é igual a 0 e é do tipo UInt8
+let maxValue = UInt.max // maxValue é igual a 255 e é do tipo UInt8
+
+// Type Safety e Type Inference
+let meaningOfLife = 42
+// meaningOfLife é inferido como sendo do tipo Int
+let pi = 3.14159
+// pi é inferido como sendo do tipo Double
+let anotherPi = 3 + 0.14159
+
+// Literais Numéricos
+let decimalInteger = 17
+let binaryInteger = 0b10001
+let octalInteger = 0o21
+let hexadecimalInteger = 0x11
+let decimalDouble = 12.1875
+let exponentDouble = 1.21875e1
+let hexadecimalDouble = 0xC.3p0
+let paddedDouble = 000123.456
+let oneMillion = 1_000_000
+let justOverOneMillion = 1_000_000.000_000_1
+
+// Type Aliases
+typealias AudioSample = UInt16
+var maxAplitudeFound = AudioSample.min
+// maxAplitudeFound agora é 0
+
+// Booleanos
+let orangesAreOrange = true
+let turnipsAreDelicius = false
+if turnipsAreDelicius {
+    print("Mmm, nabos saborosos!")
+} else {
+    print("Eww, nabos são horríveis!")
+}
+let i = 1
+if i {
+    // este exemplo não será compilado e relatará um erro
+}
+let i = 1
+if i == 1 {
+    // este exemplo irá compilar com sucesso
+}
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1108}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
